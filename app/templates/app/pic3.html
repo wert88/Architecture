@@ -1,0 +1,28 @@
+{% extends 'app/base.html' %}
+{% load bootstrap4 %}
+{% load static %}
+{% bootstrap_css %}
+{% bootstrap_javascript jquery='full' %}
+
+{% load crispy_forms_tags %}
+
+{% block content %}
+
+<div style="margin:0 120px">
+<div class="row">
+	{% for x in pics %}
+	<div class="col-lg-4 col-md-6 col-sm-12">
+		<div class="card bg-dark text-white" style="margin:2px ;">
+			  <img class="card-img" src="{{ x.file.url }}" alt="Card image">
+			<div class="card-img-overlay">
+				<h5 class="card-title">{{x.name}}</h5>
+				<p class="card-text"></p>
+				<p class="card-text"></p>
+			</div>
+		</div>
+	</div>
+	{% endfor %}
+</div>
+
+
+{% endblock %}

@@ -1,0 +1,84 @@
+{% extends 'app/base.html' %}
+{% load static %}
+{% load bootstrap4 %}
+{% bootstrap_css %}
+{% bootstrap_javascript jquery='full' %}
+
+
+{% block content %}
+
+
+		<!-- Header -->
+			<header id="header" class="alt">
+				
+				<div class="inner">
+					<h1>Arch Design</h1>
+					<p>A various collection of modern and archaic architectures</p>
+				</div>
+			</header>
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Banner -->
+					<section id="intro" class="main">
+						<span class="icon fa-diamond major"></span>
+						<h2>Modern Architecture</h2>
+						<p>The terms— modern and contemporary — have been intermingled in the design world, resulting in a bit of confusion. A kind of confusion that leads us to ask: Is contemporary architecture/design the same as modern architecture/design? The answer is no, and a little bit of yes.  To be very literal, contemporary means now, while modern refers to technological and engineering developments that date back to the turn of the 20th Century.</p><ul class="actions">
+							<!-- li><a href="#" class="button big">Learn More</a></li -->
+						</ul>
+					</section>
+
+				<!-- Items -->
+					<section class="main items">
+						<article class="item">
+							<header>
+								<a href="{% url 'pic' %}"><img src="{% static 'images/pic01.jpg' %}" alt="" /></a>
+								<h3>more on industrial</h3>
+							</header>
+							<p>There are numerous examples of successful meshing of these two, seemingly opposing, styles together into one cohesive design.  Look to the image below— it’s a exemplary illustration of a modern and traditional union. The mixture of cedar shingles with modern structural elements creates a very unique and appealing home.</p><ul class="actions">
+								<li><a href="{% url 'pic' %}" class="button">More</a></li>
+							</ul>
+						</article>
+						<article class="item">
+							<header>
+								<a href="{% url 'pic2' %}"><img src="{% static 'images/pic02.jpg' %}" alt="" /></a>
+								<h3>modern and contemporary</h3>
+							</header>
+							<p>Use the above images and text to inspire the modern home of your dreams. Research local architects in your area to see if you can find one to build you a modern mecca, or help you remodel your current home into a modern version of itself. For further inspiration try reading 10 Contemporary</p><ul class="actions">
+								<li><a href="{% url 'pic2' %}" class="button">More</a></li>
+							</ul>
+						</article>
+						<article class="item">
+							<header>
+								<a href="{% url 'pic3' %}"><img src="{% static 'images/pic03.jpg' %}" alt="" /></a>
+								<h3>concrete and glass</h3>
+							</header>
+							<p>Look to the originality of the bold, angular roof lines that are so prominent in modern design—these are very unique.  Everything from the vaulted ceilings, to the exposed structural elements, to the unusual linear elements— all equate to a unique, artistic design that you cannot help but be amazed by.</p><ul class="actions">
+								<li><a href="{% url 'pic3' %}" class="button">More</a></li>
+							</ul>
+						</article>
+						<article class="item">
+							<header>
+								<a href="{% url 'pic4' %}"><img src="{% static 'images/pic04.jpg' %}" alt="" /></a>
+								<h3>keep it simple</h3>
+							</header>
+							<p>Overall, modern architecture is defined by clean lines and minimalist interiors that allow the structure to speak for itself and take center-stage. The image below is a perfect example of clean and simple modern architecture.</p><ul class="actions">
+								<li><a href="{% url 'pic4' %}" class="button">More</a></li>
+							</ul>
+						</article>
+					</section>
+
+
+
+				<!-- Main -->
+				<!--
+					<section id="main" class="main">
+						<header>
+							<h2>Lorem ipsum dolor</h2>
+						</header>
+						<p>Fusce malesuada efficitur venenatis. Pellentesque tempor leo sed massa hendrerit hendrerit. In sed feugiat est, eu congue elit. Ut porta magna vel felis sodales vulputate. Donec faucibus dapibus lacus non ornare. Etiam eget neque id metus gravida tristique ac quis erat. Aenean quis aliquet sem. Ut ut elementum sem. Suspendisse eleifend ut est non dapibus. Nulla porta, neque quis pretium sagittis, tortor lacus elementum metus, in imperdiet ante lorem vitae ipsum. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Etiam eget neque id metus gravida tristique ac quis erat. Aenean quis aliquet sem. Ut ut elementum sem. Suspendisse eleifend ut est non dapibus. Nulla porta, neque quis pretium sagittis, tortor lacus elementum metus, in imperdiet ante lorem vitae ipsum. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+					</section>
+				-->
+
+{% endblock %}
